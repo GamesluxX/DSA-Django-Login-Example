@@ -1,0 +1,17 @@
+{% extends "layout.html" %}{% load static %} {% block content %}
+<br /><br />
+<div class="container">
+    <div class="row">
+        <div class="card-body">
+            <h5><b>Are you looking for freeeeeedooooom?!?!</b></h5>
+            <div>
+                You have been logged out!
+            </div>
+            <br>
+            <div class="form-group">
+                <a href="{% url 'login' %}"><b>Login again</b></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

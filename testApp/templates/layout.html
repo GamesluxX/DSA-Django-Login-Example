@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/s/o093y16u4d3kojv/code.png?dl=0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet" />
+    <title>Django Example</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #BA0020; height: 10px;">
+        <div>
+            <br>
+        </div>
+    </nav>
+    <div>
+            <img src="{% static "logo.png" %}" width="300" style="padding-top: 20px; padding-left: 10px;">
+        </  div>
+    <div class="container">{% block content %}{% endblock content %}</div>
+
+    <footer class="page-footer font-small black">
+        <div class="footer-copyright text-center py-3">
+            Django Example for the DSA class of Hannah Bechara
+        </div>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    {% block jsfiles %}{% endblock jsfiles %}
+</body>
+
+</html>
